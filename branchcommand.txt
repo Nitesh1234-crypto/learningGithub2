@@ -1,0 +1,293 @@
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch update
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+  update
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git checkout update
+Switched to branch 'update'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update)
+$ git log
+commit 077d0c1c58785019b01374a743856c63ba232d3a (HEAD -> update, master)
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Mon Sep 25 16:49:11 2023 +0530
+
+    changes in file2 and created new file file3
+
+commit 4dea10b8a5462e095520d7f82c1a4a591840a2bd
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Fri Sep 22 17:43:48 2023 +0530
+
+    changes in file1 and create new file2
+
+commit 1098306cdfd477147451017dddc351be58f3d1e1
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Fri Sep 22 17:23:10 2023 +0530
+
+    my first commit
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update)
+$ git branch
+  master
+* update
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update)
+$ git add -A
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update)
+$ git commit -m "changes done on update branch"
+[update ea43f3e] changes done on update branch
+ 2 files changed, 1 insertion(+)
+ create mode 100644 file4.txt
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update)
+$ git log
+commit ea43f3e43b9d27f2bc848deb3665e78f5ff75c49 (HEAD -> update)
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Mon Sep 25 17:10:35 2023 +0530
+
+    changes done on update branch
+
+commit 077d0c1c58785019b01374a743856c63ba232d3a (master)
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Mon Sep 25 16:49:11 2023 +0530
+
+    changes in file2 and created new file file3
+
+commit 4dea10b8a5462e095520d7f82c1a4a591840a2bd
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Fri Sep 22 17:43:48 2023 +0530
+
+    changes in file1 and create new file2
+
+commit 1098306cdfd477147451017dddc351be58f3d1e1
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Fri Sep 22 17:23:10 2023 +0530
+
+    my first commit
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update)
+$ git checkout master
+Switched to branch 'master'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+  update
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git merge update
+Updating 077d0c1..ea43f3e
+Fast-forward
+ file3.txt | 1 +
+ file4.txt | 0
+ 2 files changed, 1 insertion(+)
+ create mode 100644 file4.txt
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git log
+commit ea43f3e43b9d27f2bc848deb3665e78f5ff75c49 (HEAD -> master, update)
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Mon Sep 25 17:10:35 2023 +0530
+
+    changes done on update branch
+
+commit 077d0c1c58785019b01374a743856c63ba232d3a
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Mon Sep 25 16:49:11 2023 +0530
+
+    changes in file2 and created new file file3
+
+commit 4dea10b8a5462e095520d7f82c1a4a591840a2bd
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Fri Sep 22 17:43:48 2023 +0530
+
+    changes in file1 and create new file2
+
+commit 1098306cdfd477147451017dddc351be58f3d1e1
+Author: Nitesh1234-crypto <nitesh.e21@nsut.ac.in>
+Date:   Fri Sep 22 17:23:10 2023 +0530
+
+    my first commit
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+  update
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch -d update
+Deleted branch update (was ea43f3e).
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch update1
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+  update1
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch update2
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch
+* master
+  update1
+  update2
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git checkout update1
+Switched to branch 'update1'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git checkout master
+Switched to branch 'master'
+M       file1.txt
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git checkout update1
+Switched to branch 'update1'
+M       file1.txt
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git stash
+Saved working directory and index state WIP on update1: ea43f3e changes done on update branch
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git checkout master
+Switched to branch 'master'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git checkout update1
+Switched to branch 'update1'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git stash apply
+On branch update1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git add -A
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git commit -m "changes done on update1 branch"
+[update1 fd9c812] changes done on update1 branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update1)
+$ git checkout update2
+Switched to branch 'update2'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update2)
+$ git add -A
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update2)
+$ git commit -m "chnages done by update2 branch"
+[update2 8fd1588] chnages done by update2 branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update2)
+$ git checkout master
+Switched to branch 'master'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git merge update1
+Updating ea43f3e..fd9c812
+Fast-forward
+ file1.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git merge update2
+Merge made by the 'ort' strategy.
+ file2.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch -d update1
+Deleted branch update1 (was fd9c812).
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch -d update2
+Deleted branch update2 (was 8fd1588).
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch update3
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git branch update4
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git checkout update3
+Switched to branch 'update3'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update3)
+$ git add -A
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update3)
+$ git commit -m "file1 mai update1 likha hai"
+[update3 5bb81da] file1 mai update1 likha hai
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update3)
+$ git checkout update4
+Switched to branch 'update4'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update4)
+$ git add -A
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update4)
+$ git commit -m "file1 mai update2 likha hai"
+[update4 d0303b9] file1 mai update2 likha hai
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (update4)
+$ git checkout master
+Switched to branch 'master'
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git merge update3
+Updating 0ab55d8..5bb81da
+Fast-forward
+ file1.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
+$ git merge update4
+Auto-merging file1.txt
+CONFLICT (content): Merge conflict in file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master|MERGING)
+$ git add -A
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master|MERGING)
+$ git commit -m "conflict resolve"
+[master 9229054] conflict resolve
+
+pc@DESKTOP-DDAPP7H MINGW64 ~/Desktop/chitkara_code/git2 (master)
