@@ -1,7 +1,4 @@
 hello world!!
 changes by update1
-<<<<<<< HEAD
 update1
-=======
 update2
->>>>>>> update4
